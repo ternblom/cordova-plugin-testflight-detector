@@ -20,7 +20,7 @@
     return @{
              @"manufacturer": @"Apple",
              @"platform": @"iOS",
-             @"isTestFlight": @([self isTestFlight])
+             @"isTestFlight": @([self isTestFlight]),
              @"isVirtual": @([self isVirtual])
              };
 }
