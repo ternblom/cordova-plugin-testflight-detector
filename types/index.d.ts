@@ -11,7 +11,9 @@ interface TFDetector {
     platform: string;
 	/** Get the device's manufacturer. */
 	manufacturer: string;
-	/** Whether the device is running on a simulator. */
-	isTestFlight: boolean;}
+	/** Whether the device is running on TestFlight. */
+    isTestFlight: boolean;
+    /** Whether the device is running on a simulator. */
+	isVirtual: boolean;}
 
 declare var device: TFDetector;

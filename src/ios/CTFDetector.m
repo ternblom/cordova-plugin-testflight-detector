@@ -21,6 +21,7 @@
              @"manufacturer": @"Apple",
              @"platform": @"iOS",
              @"isTestFlight": @([self isTestFlight])
+             @"isVirtual": @([self isVirtual])
              };
 }
 
@@ -41,6 +42,17 @@
         NSLog(@"%@", receiptURLString);*/
         return false;
     }
+}
+
+- (BOOL)isVirtual
+{
+    #if TARGET_OS_SIMULATOR
+        return true;
+    #elif TARGET_IPHONE_SIMULATOR
+        return true;
+    #else
+        return false;
+    #endif
 }
 
 @end

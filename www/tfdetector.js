@@ -20,6 +20,7 @@ function TFDetector () {
     this.cordova = null;
     this.manufacturer = null;
     this.isTestFlight = null;
+    this.isVirtual = null;
 
     var me = this;
 
@@ -32,6 +33,7 @@ function TFDetector () {
             me.platform = info.platform;
             me.cordova = buildLabel;
             me.isTestFlight = info.isTestFlight;
+            me.isVirtual = info.isVirtual;
             me.manufacturer = info.manufacturer || 'unknown';
             channel.onCordovaInfoReady.fire();
         }, function (e) {
