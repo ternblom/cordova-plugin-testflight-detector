@@ -49,7 +49,7 @@ function TFDetector () {
  */
 TFDetector.prototype.getInfo = function (successCallback, errorCallback) {
     argscheck.checkArgs('fF', 'TFDetector.getInfo', arguments);
-    exec(successCallback, errorCallback, 'TFDetector', 'getTFDetectorInfo', []);
+    exec(successCallback, errorCallback, 'TFDetector', 'getDeviceEnvironment', []);
 };
 
 module.exports = new TFDetector();
