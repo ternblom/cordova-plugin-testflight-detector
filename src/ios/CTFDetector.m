@@ -37,8 +37,8 @@
         return true;
         
     } else {
-        NSString *thingToReturn = @"PRODUCTION";
-        /*NSLog(@"Value of string is %@", thingToReturn);
+        /*NSString *thingToReturn = @"PRODUCTION";
+        NSLog(@"Value of string is %@", thingToReturn);
         NSLog(@"%@", receiptURLString);*/
         return false;
     }

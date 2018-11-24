@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-testflight-detector" version="0.0.1">
-    <name>TestFlight Detectoe</name>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-testflight-detector" version="0.0.5">
+    <name>TestFlight Detector</name>
     <description>Cordova Testflight Detector Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,testflight,detector</keywords>
+    <repo>https://github.com/ternblom/cordova-plugin-testflight-detector</repo>
+
+    <dependency id="cordova-plugin-add-swift-support" version=">=1.7.2"/>
+
     <js-module src="www/tfdetector.js" name="tfdetector">
         <clobbers target="tfdetector" />
     </js-module>
+
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="TFDetector">
-                <param name="ios-package" value="CTFDetector"/>
+                <param name="ios-package" value="TFDetector"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/CTFDetector.h" />
-        <source-file src="src/ios/CTFDetector.m" />
+        <source-file src="src/ios/TFDetector.swift" />
     </platform>
 </plugin>
