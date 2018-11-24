@@ -41,7 +41,7 @@ function TFDetector () {
 
 TFDetector.prototype.getInfo = function (successCallback, errorCallback) {
     argscheck.checkArgs('fF', 'TFDetector.getInfo', arguments);
-    exec(successCallback, errorCallback, 'TFDetector', 'getDeviceEnvironment', []);
+    exec(successCallback, errorCallback, 'TFDetector', 'getInfo', []);
 };
 
 TFDetector.prototype.isRunningInTestFlightEnvironment = function (successCallback, errorCallback) {
