@@ -1,11 +1,7 @@
-#import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface CTFDetector : CDVPlugin 
-{}
+@interface TFDetector : CDVPlugin 
 
-+ (NSString*)deviceEnvironment;
-
-- (void)getDeviceEnvironment:(CDVInvokedUrlCommand*)command;
+- (void)getInfo:(CDVInvokedUrlCommand*)command;
 
 @end
